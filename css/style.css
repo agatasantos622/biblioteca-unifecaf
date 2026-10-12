@@ -1,0 +1,1208 @@
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #202428;
+    background-color: #ffffff;
+}
+
+
+/* ===== CABEÇALHO ===== */
+
+header {
+    background-color: #ffffff;
+    padding: 20px 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #004B76;
+    text-decoration: none;
+}
+
+nav div {
+    display: flex;
+    gap: 30px;
+}
+
+nav div a {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #004B76;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav div a:hover {
+    color: #1687B8;
+}
+
+
+/* ===== BANNER PRINCIPAL ===== */
+
+.banner-principal {
+    min-height: 600px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../assets/imagens/banner-principal.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.banner-conteudo {
+    color: #ffffff;
+    max-width: 700px;
+    padding: 30px;
+}
+
+.banner-conteudo h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-conteudo p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+
+/* ===== BOTÕES ===== */
+
+.botao {
+    display: inline-block;
+
+    background-color: #1687B8;
+    color: #ffffff;
+
+    padding: 14px 28px;
+    border-radius: 6px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #004B76;
+}
+
+
+/* ===== SOBRE NOSSA BIBLIOTECA ===== */
+
+.sobre {
+    background-color: #F2F4F5;
+    padding: 90px 60px;
+}
+
+.sobre-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    align-items: center;
+}
+
+.sobre-texto {
+    max-width: 550px;
+}
+
+.subtitulo-secao {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #1687B8;
+
+    letter-spacing: 1.5px;
+}
+
+.sobre-texto h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+
+    color: #004B76;
+
+    margin: 12px 0 20px;
+}
+
+.sobre-texto p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* ===== IMAGEM DA SEÇÃO SOBRE ===== */
+
+.sobre-imagem img {
+    width: 100%;
+    height: 380px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+
+/* ===== DESTAQUES ===== */
+
+.destaques {
+    max-width: 1200px;
+    margin: 70px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.destaque {
+    background-color: #ffffff;
+
+    padding: 30px 24px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.icone {
+    display: block;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.destaque h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+
+    color: #004B76;
+
+    margin-bottom: 10px;
+}
+
+.destaque p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ===== BANNER DE LIVROS ===== */
+
+.banner-livros {
+    min-height: 420px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.50),
+            rgba(0, 0, 0, 0.50)
+        ),
+        url("../assets/imagens/banner-livros.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.banner-livros-conteudo {
+    max-width: 700px;
+    padding: 30px;
+
+    color: #ffffff;
+}
+
+.banner-livros-conteudo h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+.banner-livros-conteudo p {
+    font-size: 19px;
+    line-height: 1.6;
+
+    margin-bottom: 28px;
+}
+
+
+/* ===== SEÇÃO NOSSOS LIVROS ===== */
+
+.livros {
+    background-color: #ffffff;
+    padding: 90px 60px;
+}
+
+.titulo-secao {
+    max-width: 700px;
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.titulo-secao h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+
+    color: #004B76;
+
+    margin: 12px 0 15px;
+}
+
+.titulo-secao p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* ===== GRID DOS LIVROS ===== */
+
+.livros-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* ===== CARD DO LIVRO ===== */
+
+.livro-card {
+    background-color: #ffffff;
+
+    border: 1px solid #e1e5e8;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s;
+}
+
+.livro-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ===== CAPA DO LIVRO ===== */
+
+.livro-card > img {
+    width: 100%;
+    height: 360px;
+
+    object-fit: contain;
+
+    background-color: #F2F4F5;
+
+    display: block;
+}
+
+
+/* ===== CONTEÚDO DO LIVRO ===== */
+
+.livro-conteudo {
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.livro-conteudo h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+
+    color: #004B76;
+
+    margin-bottom: 12px;
+}
+
+.livro-conteudo > p {
+    font-size: 14px;
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+
+    flex: 1;
+}
+
+
+/* ===== SAIBA MAIS DOS LIVROS ===== */
+
+.livro-detalhes {
+    margin-top: auto;
+}
+
+.livro-detalhes summary {
+    color: #D6A84F;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    list-style-position: inside;
+}
+
+.livro-detalhes summary:hover {
+    color: #004B76;
+}
+
+.livro-detalhes[open] summary {
+    margin-bottom: 12px;
+    color: #004B76;
+}
+
+.livro-detalhes p {
+    font-size: 13px;
+    line-height: 1.7;
+
+    color: #4a4f54;
+
+    padding-top: 2px;
+}
+
+
+/* ===== SEÇÃO AS UNIDADES ===== */
+
+.unidades {
+    background-color: #F2F4F5;
+    padding: 90px 60px;
+}
+
+.unidades-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* ===== CARD DA UNIDADE ===== */
+
+.unidade-card {
+    background-color: #ffffff;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    border: 1px solid #e1e5e8;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s;
+}
+
+.unidade-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ===== IMAGEM DA UNIDADE ===== */
+
+.unidade-card > img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ===== CONTEÚDO DA UNIDADE ===== */
+
+.unidade-conteudo {
+    padding: 28px;
+}
+
+.unidade-local {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #1687B8;
+
+    letter-spacing: 1.5px;
+}
+
+.unidade-conteudo h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+
+    color: #004B76;
+
+    margin: 10px 0 12px;
+}
+
+.unidade-conteudo p {
+    font-size: 15px;
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* ===== LINK DA UNIDADE ===== */
+
+.unidade-link {
+    color: #1687B8;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.unidade-link:hover {
+    color: #004B76;
+}
+
+
+/* ===== SEÇÃO CONTATO ===== */
+
+.contato {
+    background-color: #ffffff;
+    padding: 90px 60px;
+}
+
+.contato-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+/* ===== IMAGEM DO CONTATO ===== */
+
+.contato-imagem img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+
+/* ===== TEXTO DO CONTATO ===== */
+
+.contato-texto h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+
+    color: #004B76;
+
+    margin: 12px 0 20px;
+}
+
+.contato-texto > p {
+    font-size: 16px;
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+
+/* ===== INFORMAÇÕES DE CONTATO ===== */
+
+.contato-informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.contato-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.contato-icone {
+    min-width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #F2F4F5;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+}
+
+.contato-item h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+
+    color: #004B76;
+
+    margin-bottom: 4px;
+}
+
+.contato-item p,
+.contato-item a {
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #202428;
+}
+
+.contato-item a {
+    color: #1687B8;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.contato-item a:hover {
+    color: #004B76;
+}
+
+
+/* ===== RODAPÉ ===== */
+
+footer {
+    background-color: #004B76;
+    color: #ffffff;
+    padding: 45px 60px 20px;
+}
+
+.footer-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.footer-marca h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.footer-marca p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #D6A84F;
+}
+
+.footer-final {
+    max-width: 1200px;
+    margin: 35px auto 0;
+
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    text-align: center;
+}
+
+.footer-final p {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+
+/* ===== BOTÃO VOLTAR AO INÍCIO ===== */
+
+.voltar-inicio {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 48px;
+    height: 48px;
+
+    background-color: #1687B8;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.18);
+
+    transition: 0.3s;
+
+    z-index: 1000;
+}
+
+.voltar-inicio span {
+    position: absolute;
+
+    right: 58px;
+
+    background-color: #004B76;
+    color: #ffffff;
+
+    padding: 6px 10px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: 0.3s;
+}
+
+.voltar-inicio:hover {
+    background-color: #004B76;
+    transform: translateY(-3px);
+}
+
+.voltar-inicio:hover span {
+    opacity: 1;
+}
+
+
+/* ===== FOCO PELO TECLADO ===== */
+
+/* Destaca links e elementos interativos quando usados pelo teclado. */
+a:focus-visible,
+summary:focus-visible {
+    outline: 3px solid #D6A84F;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+
+/* ========================================================= */
+/* ===== RESPONSIVIDADE — TABLETS ========================== */
+/* ========================================================= */
+
+@media (max-width: 1000px) {
+
+    /* ===== CABEÇALHO ===== */
+
+    header {
+        padding: 20px 35px;
+    }
+
+    nav {
+        gap: 25px;
+    }
+
+    nav > a {
+        font-size: 19px;
+    }
+
+    nav div {
+        gap: 18px;
+    }
+
+
+    /* ===== SOBRE ===== */
+
+    .sobre {
+        padding: 70px 35px;
+    }
+
+    .sobre-conteudo {
+        gap: 35px;
+    }
+
+    .sobre-texto h2 {
+        font-size: 32px;
+    }
+
+
+    /* ===== DESTAQUES ===== */
+
+    .destaques {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 50px;
+    }
+
+
+    /* ===== LIVROS ===== */
+
+    .livros {
+        padding: 70px 35px;
+    }
+
+    .livros-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ===== UNIDADES ===== */
+
+    .unidades {
+        padding: 70px 35px;
+    }
+
+
+    /* ===== CONTATO ===== */
+
+    .contato {
+        padding: 70px 35px;
+    }
+
+    .contato-conteudo {
+        gap: 35px;
+    }
+
+    .contato-imagem img {
+        height: 450px;
+    }
+
+
+    /* ===== RODAPÉ ===== */
+
+    footer {
+        padding: 40px 35px 20px;
+    }
+
+}
+
+
+/* ========================================================= */
+/* ===== RESPONSIVIDADE — CELULAR ========================== */
+/* ========================================================= */
+
+@media (max-width: 700px) {
+
+    /* ===== CABEÇALHO ===== */
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 18px;
+
+        text-align: center;
+    }
+
+    nav > a {
+        font-size: 20px;
+    }
+
+    nav div {
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 18px;
+
+        flex-wrap: wrap;
+    }
+
+    nav div a {
+        font-size: 14px;
+    }
+
+
+    /* ===== BANNER PRINCIPAL ===== */
+
+    .banner-principal {
+        min-height: 520px;
+    }
+
+    .banner-conteudo {
+        padding: 25px 20px;
+    }
+
+    .banner-conteudo h1 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .banner-conteudo p {
+        font-size: 18px;
+    }
+
+
+    /* ===== BOTÕES ===== */
+
+    .botao {
+        padding: 13px 22px;
+        font-size: 14px;
+    }
+
+
+    /* ===== SOBRE ===== */
+
+    .sobre {
+        padding: 60px 20px;
+    }
+
+    .sobre-conteudo {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .sobre-texto {
+        max-width: none;
+    }
+
+    .sobre-texto h2 {
+        font-size: 30px;
+    }
+
+    .sobre-texto p {
+        font-size: 15px;
+    }
+
+    .sobre-imagem img {
+        height: 300px;
+    }
+
+
+    /* ===== DESTAQUES ===== */
+
+    .destaques {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+        gap: 15px;
+    }
+
+    .destaque {
+        padding: 25px 20px;
+    }
+
+
+    /* ===== BANNER DE LIVROS ===== */
+
+    .banner-livros {
+        min-height: 380px;
+    }
+
+    .banner-livros-conteudo {
+        padding: 25px 20px;
+    }
+
+    .banner-livros-conteudo h2 {
+        font-size: 30px;
+    }
+
+    .banner-livros-conteudo p {
+        font-size: 16px;
+    }
+
+
+    /* ===== TÍTULOS DAS SEÇÕES ===== */
+
+    .titulo-secao {
+        margin-bottom: 40px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 30px;
+    }
+
+    .titulo-secao p {
+        font-size: 15px;
+    }
+
+
+    /* ===== LIVROS ===== */
+
+    .livros {
+        padding: 60px 20px;
+    }
+
+    .livros-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .livro-card > img {
+        height: 340px;
+    }
+
+    .livro-conteudo {
+        padding: 22px;
+    }
+
+    .livro-conteudo h3 {
+        font-size: 19px;
+    }
+
+
+    /* ===== UNIDADES ===== */
+
+    .unidades {
+        padding: 60px 20px;
+    }
+
+    .unidades-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .unidade-card > img {
+        height: 260px;
+    }
+
+    .unidade-conteudo {
+        padding: 22px;
+    }
+
+
+    /* ===== CONTATO ===== */
+
+    .contato {
+        padding: 60px 20px;
+    }
+
+    .contato-conteudo {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contato-imagem img {
+        height: 320px;
+    }
+
+    .contato-texto h2 {
+        font-size: 30px;
+    }
+
+    .contato-texto > p {
+        font-size: 15px;
+    }
+
+    .contato-informacoes {
+        gap: 20px;
+    }
+
+
+    /* ===== RODAPÉ ===== */
+
+    footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer-conteudo {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 25px;
+    }
+
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .footer-final {
+        margin-top: 30px;
+    }
+
+
+    /* ===== BOTÃO VOLTAR AO INÍCIO ===== */
+
+    .voltar-inicio {
+        right: 18px;
+        bottom: 18px;
+
+        width: 44px;
+        height: 44px;
+
+        font-size: 20px;
+    }
+
+    .voltar-inicio span {
+        display: none;
+    }
+
+}
+
+
+/* ========================================================= */
+/* ===== CELULARES PEQUENOS ================================ */
+/* ========================================================= */
+
+@media (max-width: 420px) {
+
+    /* ===== CABEÇALHO ===== */
+
+    nav > a {
+        font-size: 18px;
+    }
+
+    nav div {
+        gap: 12px;
+    }
+
+    nav div a {
+        font-size: 13px;
+    }
+
+
+    /* ===== BANNER PRINCIPAL ===== */
+
+    .banner-principal {
+        min-height: 480px;
+    }
+
+    .banner-conteudo h1 {
+        font-size: 29px;
+    }
+
+    .banner-conteudo p {
+        font-size: 16px;
+    }
+
+
+    /* ===== LIVROS ===== */
+
+    .livro-card > img {
+        height: 300px;
+    }
+
+
+    /* ===== CONTATO ===== */
+
+    .contato-item {
+        gap: 12px;
+    }
+
+    .contato-icone {
+        min-width: 38px;
+        height: 38px;
+
+        font-size: 16px;
+    }
+
+    .contato-item p,
+    .contato-item a {
+        font-size: 13px;
+    }
+
+
+    /* ===== BOTÃO VOLTAR ===== */
+
+    .voltar-inicio {
+        right: 14px;
+        bottom: 14px;
+
+        width: 42px;
+        height: 42px;
+    }
+
+}
